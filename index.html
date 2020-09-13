@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="hicon.png" size=40x40>
+    <link rel="shortcut icon" href="hicon.png">
+    <link rel="apple-touch-icon" sizes="50x50" href="hicon.png">
+    <link rel="apple-touch-icon" href="hicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Dictionary</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="nav-bar">
+        Dictionary - <a href="https://www.hritikarya.com"> Hritik Arya</a>
+    </div>
+    <div class="search-container">
+        <input class="search-input" type="text" placeholder="Enter a word..." size="25" focus>
+        <button class="search-btn"> Search </button>
+    </div>
+    
+    <div class="loader"></div>
+
+    <div class="did-you-mean">
+        <div class="did-you-mean-heading">Did you mean: </div>
+        <div class="did-you-mean-btn-container">
+            <button class="did-you-mean-btn" value="apple">apple</button>
+            <button class="did-you-mean-btn" value="banana">banana</button>
+            <button class="did-you-mean-btn" value="orange">orange</button>
+            <button class="did-you-mean-btn" value="pineapple">pineapple</button>
+            <button class="did-you-mean-btn" value="guava">guava</button>
+        </div>
+    </div>
+    <div class="output-container">
+        <div class="output-container-heading">
+            <span id="audioSpan">
+                <audio id="myAudio">
+                    <source id="myAudioSource" src="https://media.merriam-webster.com/audio/prons/en/us/wav/d/dictio04.wav">
+                </audio>
+            </span>
+            
+            <h1 id="output-word">
+                <i class="fa fa-volume-up sound-btn" aria-hidden="true"></i>
+                dictionary
+            </h1>
+            <h5 id="output-pronunciation">/ˈdik-shə-ˌner-ē/</h5>
+        </div>
+        <div class="output-word-description">
+            <i><div class="word-type">noun</div></i>
+            <div class="word-meaning">
+                <ol>
+                    <li>a reference source in print or electronic form containing words usually alphabetically arranged along with information about their forms, pronunciations, functions, etymologies, meanings, and syntactic and idiomatic uses</li>
+                    <!-- <div class="word-sentence">Sentence: Bla bla</div> -->
+
+                    <li>a reference book listing alphabetically terms or names important to a particular subject or activity along with discussion of their meanings and applications</li>
+                    <!-- <div class="word-sentence">Sentence: Bla bla</div> -->
+                
+                    <li>a reference book listing alphabetically the words of one language and showing their meanings or translations in another language</li>
+                    <!-- <div class="word-sentence">Sentence: Bla bla</div> -->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

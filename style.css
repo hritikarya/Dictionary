@@ -1,0 +1,227 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+}
+
+/*NAVIGATION BAR*/
+.nav-bar {
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(36, 36, 36);
+    color: rgb(64, 196, 233);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: rgb(64, 196, 233);
+    transition: 0.3s ease;
+}
+.nav-bar a:hover {
+    color: rgb(49, 150, 179);
+}
+/*************************************/
+
+
+/*INPUT/SEARCH CONTAINER*/
+.search-container {
+    /* background-color: rgb(167, 22, 22); */
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.search-input,
+.search-btn {
+    font-size: 20px;
+    padding: 9px;
+    border-style: none;
+    border-radius: 35px;
+    background-color: #ffffff;
+}
+.search-input {
+    margin-right: 8px;
+}
+.search-btn {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.search-btn:hover {
+    background-color: rgb(152, 152, 152);
+    color: #000000;
+}
+.search-input:focus,
+.search-btn:focus {
+    outline: none;
+}
+.loading {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+/*************************************/
+/*LOADER & DID YOU MEAN*/
+.loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: 70px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #000000;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 0.5s linear infinite; 
+    animation: spin 0.5s linear infinite;
+  }
+  
+
+   @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.did-you-mean {
+    display: none;
+    margin-top: 25px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.did-you-mean-btn {
+    font-size: 15px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #ffffff;
+}
+.did-you-mean-btn:hover {
+    background-color: rgb(152, 152, 152);
+    color: #000000;
+}
+.did-you-mean-btn:focus {
+    outline: none;
+}
+
+
+/*************************************/
+
+
+/*OUTPUT CONTAINER*/
+.output-container {
+    -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 50px auto 0 auto;
+    width: 700px;
+    max-width: 80%;
+    height: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    overflow: auto;
+}
+/* .output-word-description {
+
+} */
+.output-container-heading {
+    text-align: center;
+    width: 100%;
+}
+.sound-btn {
+    margin-right: 7px;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+.sound-btn:hover {
+    cursor: pointer;
+    color: rgb(152, 152, 152);
+}
+.output-container-heading h1 {
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+}
+.output-container-heading h5 {
+    margin-top: 0;
+    font-weight: 300;
+    color: rgb(203, 203, 203);
+}
+.word-type {
+    color: rgb(203, 203, 203);
+}
+.word-meaning ol li {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.word-meaning .word-sentence {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 840px) {
+.nav-bar {
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    }
+.search-container {
+    width: 100%;
+}
+.search-input,
+.search-btn {
+    font-size: 15px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 30px;
+}
+.search-input {
+    width: 150px;
+    margin-right: 4px;
+}
+.loader {
+    margin-left: -30px;
+    margin-top: 70px;
+    width: 60px;
+    height: 60px;
+}
+  
+.output-container {
+    margin: 30px auto 0 auto;
+}
+.output-container-heading h1 {
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+}
+.sound-btn {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.word-meaning ol li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.word-meaning .word-sentence {
+    margin-bottom: 20px;
+}
+
+
+}
